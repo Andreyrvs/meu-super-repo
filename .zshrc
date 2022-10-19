@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # carrega um tema aleatório toda vez que oh-my-zsh é carregado, nesse caso,
 # para saber qual específico foi carregado, execute: echo $RANDOM_THEME
 # Veja https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="candy"
 
 # Defina uma lista de temas para escolher ao carregar aleatoriamente
 # Definir esta variável quando ZSH_THEME=random fará com que o zsh seja carregado
@@ -27,10 +27,10 @@ ZSH_THEME="amuse"
 # zstyle ':omz:update' mode disabled # desabilita as atualizações automáticas
 # zstyle ':omz:update' mode auto # atualiza automaticamente sem perguntar
 # zstyle ':omz:update' mode lembrete # apenas me lembre de atualizar quando for a hora
-zstyle ':omz:update' mode auto
+# zstyle ':omz:update' mode auto
 
 # Descomente a linha a seguir para alterar a frequência de atualização automática (em dias).
-# zstyle ':omz:update' frequência 13
+ zstyle ':omz:update' frequência 3
 
 # Descomente a linha a seguir se colar URLs e outros textos estiver errado.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -48,7 +48,7 @@ zstyle ':omz:update' mode auto
 # Você também pode configurá-lo para outra string para que seja mostrado em vez dos pontos vermelhos padrão.
 # por exemplo. COMPLETION_WAITING_DOTS="%F{yellow}aguardando...%f"
 # Atenção: esta configuração pode causar problemas com prompts de várias linhas em zsh < 5.7.1 (consulte #5765)
-# COMPLETION_WAITING_DOTS="verdadeiro"
+ COMPLETION_WAITING_DOTS="true"
 
 # Descomente a seguinte linha se você quiser desabilitar a marcação de arquivos não rastreados
 # sob VCS como sujo. Isso faz com que o status do repositório verifique se há repositórios grandes
@@ -73,7 +73,8 @@ zstyle ':omz:update' mode auto
 # Adicione com sabedoria, pois muitos plugins retardam a inicialização do shell.
 plugins=( git 
 	zsh-syntax-highlighting
-	zsh-autosuggestions )
+	zsh-autosuggestions 
+	)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,13 +109,23 @@ alias gtall="git add ."
 alias gts="git status"
 alias gtc="git commit -m"
 alias gtp="git push"
-alias gtpu="git push -u origin"
+alias gtout="git checkout"
 # Terminal
 alias c="clear"
-# pastas
-alias backend="cd betrybe/trybe-exercicios/T19C-Back-End"
+
+# PITÃO
+alias pythonvenv="python3 -m venv .venv && source .venv/bin/activate"
 
 # Exportar o nvm para outros terminais
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
+
+
+# Pyenv
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
