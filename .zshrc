@@ -30,7 +30,7 @@ ZSH_THEME="candy"
 # zstyle ':omz:update' mode auto
 
 # Descomente a linha a seguir para alterar a frequência de atualização automática (em dias).
- zstyle ':omz:update' frequência 3
+zstyle ':omz:update' frequência 1
 
 # Descomente a linha a seguir se colar URLs e outros textos estiver errado.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -101,25 +101,38 @@ source $ZSH/oh-my-zsh.sh
 # Para obter uma lista completa de aliases ativos, execute `alias`.
 #
 # Exemplo de aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias zshup="source ~/.zshrc"
+
+# Trybe
+alias trybecs="cd ~/betrybe/trybe-exercicios/Ciencia-da-Computacao/"
+alias trybe19back="cd ~/betrybe/trybe-exercicios/T19C-Back-End"
+alias trybefront="cd ~/betrybe/trybe-exercicios/front-end"
+alias trybepcs="cd ~/betrybe/projetos-Trybe/Ciencia-da-computacao"
+
 # GIT
-alias gta="git add"
-alias gtall="git add ."
-alias gts="git status"
-alias gtc="git commit -m"
-alias gtp="git push"
-alias gtout="git checkout"
+alias gita="git add"
+alias gitall="git add ."
+alias gits="git status"
+alias gitss="git status -s"
+alias gitc="git commit -m"
+alias gitp="git push"
+alias gitpo="git pull origin"
+alias gitout="git checkout"
+alias gitoutb="git checkout -b"
+
 # Terminal
 alias c="clear"
 
 # PITÃO
-alias pythonvenv="python3 -m venv .venv && source .venv/bin/activate"
+alias pyvenv="python3 -m venv .venv && source .venv/bin/activate && which python3"
+alias pylint="python3 -m flake8"
 
 # Exportar o nvm para outros terminais
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
 
 
 # Pyenv
