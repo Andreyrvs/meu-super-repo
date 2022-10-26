@@ -8,7 +8,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # carrega um tema aleatório toda vez que oh-my-zsh é carregado, nesse caso,
 # para saber qual específico foi carregado, execute: echo $RANDOM_THEME
 # Veja https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="candy"
+
+# ZSH_THEME="candy"
+ZSH_THEME="lukerandall"
 
 # Defina uma lista de temas para escolher ao carregar aleatoriamente
 # Definir esta variável quando ZSH_THEME=random fará com que o zsh seja carregado
