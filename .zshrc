@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Exemplo de aliases
 alias zshconfig="code ~/.zshrc"
+alias bashconfig="code ~/.bashrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias zshup="source ~/.zshrc"
 
@@ -120,6 +121,7 @@ alias gits="git status"
 alias gitss="git status -s"
 alias gitc="git commit -m"
 alias gitp="git push"
+alias gitpu="git push -u origin"
 alias gitpo="git pull origin"
 alias gitout="git checkout"
 alias gitoutb="git checkout -b"
@@ -130,11 +132,12 @@ alias c="clear"
 # PITÃO
 alias pyvenv="python3 -m venv .venv && source .venv/bin/activate && which python3"
 alias pylint="python3 -m flake8"
+alias pyvenva="source .venv/bin/activate"
 
 # Exportar o nvm para outros terminais
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
 
 
 # Pyenv
@@ -144,3 +147,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
+
+# Necessário para auto-complete do comando trybe-publisher
+source /etc/bash_completion.d/trybe-publisher
