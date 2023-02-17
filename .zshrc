@@ -73,10 +73,7 @@ zstyle ':omz:update' frequência 1
 # Plugins personalizados podem ser adicionados a $ZSH_CUSTOM/plugins/
 # Exemplo de formato: plugins=(rails git textmate ruby ​​lighthouse)
 # Adicione com sabedoria, pois muitos plugins retardam a inicialização do shell.
-plugins=( git 
-	zsh-syntax-highlighting
-	zsh-autosuggestions 
-	)
+plugins=( git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Exemplo de aliases
 alias zshconfig="code ~/.zshrc"
-alias bashconfig="code ~/.bashrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias zshup="source ~/.zshrc"
 
@@ -121,7 +117,6 @@ alias gits="git status"
 alias gitss="git status -s"
 alias gitc="git commit -m"
 alias gitp="git push"
-alias gitpu="git push -u origin"
 alias gitpo="git pull origin"
 alias gitout="git checkout"
 alias gitoutb="git checkout -b"
@@ -132,21 +127,23 @@ alias c="clear"
 # PITÃO
 alias pyvenv="python3 -m venv .venv && source .venv/bin/activate && which python3"
 alias pylint="python3 -m flake8"
-alias pyvenva="source .venv/bin/activate"
+
+# Update Completo
+
+alias updateall="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+
+# Remove tudo (pacotes)
+alias cleanall="sudo apt-get clean; sudo apt-get autoclean; sudo apt-get autoremove"
 
 # Exportar o nvm para outros terminais
- export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Pyenv
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
-fi
-
-# Necessário para auto-complete do comando trybe-publisher
-source /etc/bash_completion.d/trybe-publisher
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init --path)"
+# fi
