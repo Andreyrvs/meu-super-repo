@@ -8,7 +8,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # carrega um tema aleatório toda vez que oh-my-zsh é carregado, nesse caso,
 # para saber qual específico foi carregado, execute: echo $RANDOM_THEME
 # Veja https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="candy"
+
+# ZSH_THEME="candy"
+ZSH_THEME="lukerandall"
 
 # Defina uma lista de temas para escolher ao carregar aleatoriamente
 # Definir esta variável quando ZSH_THEME=random fará com que o zsh seja carregado
@@ -30,7 +32,7 @@ ZSH_THEME="candy"
 # zstyle ':omz:update' mode auto
 
 # Descomente a linha a seguir para alterar a frequência de atualização automática (em dias).
- zstyle ':omz:update' frequência 3
+zstyle ':omz:update' frequência 1
 
 # Descomente a linha a seguir se colar URLs e outros textos estiver errado.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -71,10 +73,7 @@ ZSH_THEME="candy"
 # Plugins personalizados podem ser adicionados a $ZSH_CUSTOM/plugins/
 # Exemplo de formato: plugins=(rails git textmate ruby ​​lighthouse)
 # Adicione com sabedoria, pois muitos plugins retardam a inicialização do shell.
-plugins=( git 
-	zsh-syntax-highlighting
-	zsh-autosuggestions 
-	)
+plugins=( git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,31 +100,51 @@ source $ZSH/oh-my-zsh.sh
 # Para obter uma lista completa de aliases ativos, execute `alias`.
 #
 # Exemplo de aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias zshup="source ~/.zshrc"
+
+# Trybe
+alias trybecs="cd ~/betrybe/trybe-exercicios/Ciencia-da-Computacao/"
+alias trybe19back="cd ~/betrybe/trybe-exercicios/T19C-Back-End"
+alias trybefront="cd ~/betrybe/trybe-exercicios/front-end"
+alias trybepcs="cd ~/betrybe/projetos-Trybe/Ciencia-da-computacao"
+
 # GIT
-alias gta="git add"
-alias gtall="git add ."
-alias gts="git status"
-alias gtc="git commit -m"
-alias gtp="git push"
-alias gtout="git checkout"
+alias gita="git add"
+alias gitall="git add ."
+alias gits="git status"
+alias gitss="git status -s"
+alias gitc="git commit -m"
+alias gitp="git push"
+alias gitpo="git pull origin"
+alias gitout="git checkout"
+alias gitoutb="git checkout -b"
+
 # Terminal
 alias c="clear"
 
 # PITÃO
-alias pythonvenv="python3 -m venv .venv && source .venv/bin/activate"
+alias pyvenv="python3 -m venv .venv && source .venv/bin/activate && which python3"
+alias pylint="python3 -m flake8"
+
+# Update Completo
+
+alias updateall="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+
+# Remove tudo (pacotes)
+alias cleanall="sudo apt-get clean; sudo apt-get autoclean; sudo apt-get autoremove"
 
 # Exportar o nvm para outros terminais
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Isso carrega nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"   # Isso carrega nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # Pyenv
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
-fi
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init --path)"
+# fi
