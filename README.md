@@ -1,6 +1,6 @@
 # :ghost: :smiling_face_with_three_hearts: Meu Primeiro Repositório no Github :smiling_face_with_three_hearts: :ghost:
 
-Meu primeiro repositório no GitHub
+> - Meu primeiro repositório no GitHub
 É como uma tela em branco
 Que me convida a criar algo novo
 E me enche de esperança
@@ -19,7 +19,6 @@ Meu primeiro repositório no GitHub
 É mais do que apenas um lugar
 É onde minha paixão se encontra
 E onde minha jornada começa.
-by: ChatGPT
 
 > "Este poema intitulado 'Meu primeiro repositório no GitHub' foi escrito por ChatGPT, um assistente virtual desenvolvido pela OpenAI. Você pode entrar em contato com o autor em [github da OpenAI](https://github.com/openai) para mais informações."
 
