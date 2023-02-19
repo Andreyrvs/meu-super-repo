@@ -1,4 +1,4 @@
-# :ghost: :smiling_face_with_three_hearts: Meu Primeiro Repositório no Github :smiling_face_with_three_hearts: :ghost:
+# :ghost: :smiling_face_with_three_hearts: Meu Primeiro Repositório no Github :ghost: |
 
 > .
 >> **Meu primeiro repositório no GitHub**
@@ -32,7 +32,7 @@
 >>
 >> .
 >>
-> "Este poema intitulado 'Meu primeiro repositório no GitHub' foi escrito por ChatGPT, um assistente virtual desenvolvido pela OpenAI. Você pode entrar em contato com o autor em [github da OpenAI](https://github.com/openai) para mais informações."
+> "Este poema intitulado 'Meu primeiro repositório no GitHub' foi escrito por ChatGPT, um assistente virtual desenvolvido pela OpenAI. Você pode entrar em contato com o autor em [github da OpenAi](https://github.com/openai) para mais informações."
 
 ## Zsh
 
