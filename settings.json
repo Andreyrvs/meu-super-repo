@@ -1,0 +1,121 @@
+{
+  "explorer.confirmDragAndDrop": false,
+  "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.tabSize": 2,
+  // 
+  "workbench.sash.size": 4,
+  // Live Server
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.donotVerifyTags": true,
+  // Backet pair Colorizer "E um recurso Nativo do Vscode"
+  "editor.guides.bracketPairs":"active",
+  "editor.bracketPairColorization.enabled": true,
+  "bracket-pair-colorizer-2.colors": [
+      "Gold",
+      "#0FF231",
+      "#27BDF2"
+  ],  
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Config Terminal Integrado
+  "terminal.integrated.profiles.linux": {
+      "bash": {
+          "path": "bash",
+          "icon": "terminal-bash"
+      },
+      "zsh": {
+          "path": "/usr/bin/zsh"
+      },
+      "fish": {
+          "path": "fish"
+      },
+      "tmux": {
+          "path": "tmux",
+          "icon": "terminal-tmux"
+      },
+      "pwsh": {
+          "path": "pwsh",
+          "icon": "terminal-powershell"
+      },
+      
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  // Formatadores de Linguagem Padrao
+  "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "jest.enableCodeLens": false,
+  // Config Eslint Extension
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": true
+    },
+  "eslint.validate": [
+      "javascript"
+  ],
+  "eslint.format.enable": true,
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.fontLigatures": true,
+  "eslint.alwaysShowStatus": true,
+  "workbench.tree.indent": 16,
+  "livePreview.notifyOnOpenLooseFile": false,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "terminal.explorerKind": "external",
+  "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "update.mode": "start",
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "mdb.confirmRunAll": false,
+  "[css]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+
+  // PITÃO
+
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.blackArgs": [
+      "-l 79"
+  ],
+  "python.formatting.provider": "black",
+  "files.associations": {
+      "*.py": "python",
+      "*.md": "markdown"
+  },
+  "[python]": {
+      "editor.defaultFormatter": "ms-python.python",
+      "editor.formatOnType": true,
+  },
+   "python.analysis.typeCheckingMode": "basic",
+
+   // Code Runner for PITÃO
+   "code-runner.executorMap": {
+      "python": "python3 -u"
+  },
+  "code-runner.runInTerminal": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Trybe Theme -  Dark",
+  "workbench.preferredDarkColorTheme": "Trybe Theme -  Dark",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "window.zoomLevel": 1,
+}
